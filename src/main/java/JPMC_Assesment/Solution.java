@@ -7,12 +7,12 @@ import static java.util.Collections.sort;
 
 public class Solution {
     static String[] ones = {
-            "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
-            "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+            "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+            "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
 
-    static String[] tens = {"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+    static String[] tens = {"Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
-    static String[] large_values = {"thousand", "million", "billion"};
+    static String[] large_values = {"Thousand", "Million", "Billion"};
 
 
     public static  String forNumbersUnder_100(int num){
@@ -27,7 +27,7 @@ public class Solution {
         return string1+ ones[num %10];
     }
     public  static String forNumbersUnder_1000(int num){
-        String string1 = ones[num/100]+"hundred";
+        String string1 = ones[num/100]+"Hundred";
         String string2 =forNumbersUnder_100(num% 100);
         if(num <=99){
             return string2;
